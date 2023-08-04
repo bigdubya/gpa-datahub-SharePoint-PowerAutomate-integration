@@ -36,12 +36,12 @@ jobs:
         cd terraform
         terraform init
 
-    # - name: Terraform Plan
-    #   id: plan
-    #   run: |
-    #     cd terraform
-    #     terraform plan -no-color
-    #   continue-on-error: true
+    - name: Terraform Plan
+      id: plan
+      run: |
+        cd terraform
+        terraform plan -no-color
+      continue-on-error: true
 
     # - name: Check for Terraform Plan changes
     #   run: |
